@@ -1,0 +1,47 @@
+# ─── Secrets ─────────────────────────────────────────────────────────────────
+.env
+
+# ─── Large data files (excluded per request) ─────────────────────────────────
+paper_n_section_extraction/data/
+
+# ─── Large JSON corpus files (>50MB — exceed GitHub limits) ──────────────────
+paper_n_section_extraction/final/21.1_papers_with_sections.json
+paper_n_section_extraction/final/21.2_papers_with_sections.json
+paper_n_section_extraction/final/21.3_papers_with_sections.json
+paper_n_section_extraction/final/23_papers_with_sections.json
+paper_n_section_extraction/final/24_papers_with_sections.json
+paper_n_section_extraction/final/chunks.jsonl
+
+# ─── Large generated/binary files ────────────────────────────────────────────
+embedding/embeddings.npy
+embedding/faiss.index
+embedding/metadata.pkl
+embedding/chunks.jsonl
+04_all_papers_with_sections.json
+05_chunks.jsonl
+
+# ─── Python cache ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ─── Virtual environments ─────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ─── OS files ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── IDE ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Streamlit ───────────────────────────────────────────────────────────────
+.streamlit/secrets.toml

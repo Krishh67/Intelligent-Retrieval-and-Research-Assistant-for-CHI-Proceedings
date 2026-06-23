@@ -1,0 +1,18 @@
+# ─── Core RAG & Retrieval ────────────────────────────────────────────────────
+google-generativeai>=0.8.0
+sentence-transformers>=3.0.0
+faiss-cpu>=1.7.4           # use faiss-gpu if you have a CUDA GPU
+
+# ─── Embeddings & ML ─────────────────────────────────────────────────────────
+numpy>=1.24.0
+torch>=2.0.0
+
+# ─── Streamlit Frontend ──────────────────────────────────────────────────────
+streamlit>=1.35.0
+plotly>=5.20.0
+
+# ─── PDF Extraction (paper_n_section_extraction pipeline) ────────────────────
+PyMuPDF>=1.24.0            # imported as `fitz`
+
+# ─── Utilities ───────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
