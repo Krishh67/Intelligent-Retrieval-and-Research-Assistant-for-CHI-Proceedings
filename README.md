@@ -104,7 +104,7 @@ User Query
 | Total sections | **21,802** |
 | Total chunks | **75,817** |
 | Chunk size | 700 words with 100-word overlap |
-| Embedding model | `BAAI/bge-large-en-v1.5` (768-dim) |
+| Embedding model | `BAAI/bge-large-en-v1.5` (1024-dim) |
 | Vector index | FAISS `IndexFlatIP` (cosine similarity) |
 | Index size | ~296 MB |
 
@@ -131,7 +131,7 @@ Produces three artifacts saved to `embedding/`:
 | File | Size | Description |
 |---|---|---|
 | `faiss.index` | ~296 MB | FAISS IndexFlatIP (L2-normalized) |
-| `embeddings.npy` | ~296 MB | Raw embedding array (75817 × 768) |
+| `embeddings.npy` | ~296 MB | Raw embedding array (75817 × 1024) |
 | `metadata.pkl` | ~5 MB | Per-chunk metadata (paper_id, year, title, section) |
 | `chunks.jsonl` | ~303 MB | Full chunk text corpus |
 
